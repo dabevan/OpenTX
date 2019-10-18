@@ -37,7 +37,7 @@ end
 
 function refresh(pie)
   pie.counter = pie.counter + 1
-  lcd.drawNumber(pie.zone.x, pie.zone.y, math.abs(20), LEFT + DBLSIZE + TEXT_COLOR);
+  lcd.drawNumber(pie.zone.x, pie.zone.y, math.abs(10), LEFT + DBLSIZE + TEXT_COLOR);
 end
 
 return { name="Counter", options=options, create=create, update=update, refresh=refresh, background=background }
